@@ -1,0 +1,258 @@
+@font-face {font-family: "e-Ukraine"; src: url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.eot"); src: url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.woff") format("woff"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.svg#e-Ukraine") format("svg"); }
+
+@media only screen  and (max-width: 1000px) {
+    body{
+        height: 100%;
+    }
+    .header{
+        display: none;
+    }
+    .headerphone{
+        height: auto;
+        width: 100%;
+        display: flex;
+        background-color: black;
+        justify-content: space-between;
+    }
+    .img{
+        height: 160px;
+        margin-top: 20px;
+    }
+    .poloski{
+        height: 50px;
+        margin-top: 100%;
+    }
+    .divimg1{
+        margin: 0;
+        padding: 0;
+        margin-inline-start: calc(50% - 80px);
+    }
+
+    .divimg2{
+        padding: 0;
+        margin-inline-end: calc(10% - 50px);
+    }
+    .fullscreen-bg {
+        overflow: hidden;
+        z-index: -100;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-top: 0;
+    }
+     
+    .fullscreen-bg__video {
+        height: 100%;
+        width: 100%;
+    }
+    .overlaymx {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        color:#fff;
+    }
+    .overlaymx h1 {
+        margin-inline-start: 50px;
+        color:#fff;
+        font-size: 100px;
+        margin-top:0;
+        font-family: 'e-Ukraine-Light', sans-serif;
+    }
+    .overlaymx h2 {
+        margin-inline-start: 50px;
+        color:#fff;
+        font-size: 48px;
+        margin-top:41%;
+        font-family: 'e-Ukraine-Bolt', sans-serif;
+    }
+    /*----------------------Всплываюцие окно-------------------------------*/
+.overlaygl{
+    display: block;
+}
+.zam{
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: rgb(126, 125, 125);
+  }
+  .buttonn {
+    margin-top: 50px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color: rgb(176, 189, 255);
+    width: 400px;
+    font-size: 60px;
+  }
+  .buttonn1{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color: rgb(52, 51, 51);
+    width: 400px;
+    font-size: 60px;
+  }
+  
+  .overlay {
+    z-index: 2000;
+    position: fixed;
+    overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+    display: none;
+  }
+  
+  .popup {
+    border-radius: 20px;
+    z-index: 2000;
+      position: absolute;
+      width: 500px;
+      left: 50%;
+      top: 20%;
+      transform: translate(-50%, -50%);
+      padding: 40px;
+      box-sizing: border-box;
+      color: #fff;
+  }
+  
+  .close-popup {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      width: 23px;
+      height: 23px;
+      cursor: pointer;
+  }
+  
+  .close-popup:before {
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      height: 1px;
+      width: 31px;
+      top: 11px;
+      left: -4px;
+      transform: rotate(-45deg);
+  }
+  
+  .close-popup:after {
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      height: 1px;
+      width: 31px;
+      top: 11px;
+      transform: rotate(45deg);
+      left: -4px;
+  }
+
+
+
+
+
+
+
+
+    .visual{
+        text-align: center;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+    .visual h1{
+        padding-top: 10px;
+        text-align: center;
+        margin: 0;
+        font-size: 80px;
+    }
+    .visualh2{
+        display: none;
+    }
+    .visualh2ph{
+        display: block;
+        text-align: center;
+        font-size: 60px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .prof{
+        display: none;
+    }
+    .profph{
+        display: block;
+        background: url('../img/prof.png') 100% 100% no-repeat;
+        width: 100%;
+        height: 600%;
+        background-size: 100%;
+        width: 100%;
+        color: white;
+        text-shadow: 2px 2px 2px black, 0 0 0em black;
+        margin:0 auto;
+    }
+    .profph h1{
+        padding-top: 100px;
+        margin-top:0 ;
+        color: white;
+        text-align: center;
+        font-size: 100px;
+    }
+    .profph h2{
+        padding-top: 30px;
+        margin-top:0 ;
+        color: white;
+        text-align: center;
+        font-size: 60px;
+    }
+    .tb{
+        border: 0;
+        color: white;
+        padding-left: 10%;
+    }
+    .hr{
+        border:20px solid white;
+        margin-inline-start: 0;
+        background-color: white;
+      }
+    .hr80{
+        width: 650px;
+    }
+    .hr75{
+        width: 600px;
+    }
+    .hr70{
+        width: 550px;
+    }
+    .hr60{
+        width: 500px;
+    }
+    .procent{
+        font-size: 60px;
+        padding-left: 10px;
+    }
+    .texttb{
+        text-align: start;
+        font-size: 50px;
+    }
+    td{
+        padding-top: 30px;
+    }
+    .PORTFOLIO{
+        display: none;
+    }
+    .imgmmm{
+        display: none;
+    }   
+    
+}

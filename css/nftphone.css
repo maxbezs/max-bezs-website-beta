@@ -1,0 +1,203 @@
+@media screen and (max-width: 1000px) {
+    .header{
+        display: none;
+    }
+    .headerphone{
+        display: flex;
+        height: 300px;
+        width: 100%;
+    }
+    .img{
+        height: 200px;
+    }
+    .poloski{
+        height: 100px;
+        margin-inline-start: 100%;
+        margin-top: 50px;
+    }
+    .divimg1{
+        margin-inline-start: 40%;
+    }
+    .nft{
+        display: none;
+    }
+    .patreon{
+        text-align: center;
+        padding-top: 100px;
+        background: url('../img/opensea.jpg') no-repeat;
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 1000px;
+        background-size: 100%;
+    }
+    .patreon h1{
+        padding-left: 0;
+        font-size: 80px;
+        margin-top: 100px;
+    }
+    .patreon h2{
+        text-align: center;
+        font-size: 50px;
+        padding-top: 600px;
+    }
+    .nftphone{
+        display: block;
+        text-align: center;
+        font-size: 50px;
+        height: 1000px;
+    }
+    .divnft{
+        height: 280px;
+    }
+    .nftimg{
+        width: 280px;
+        margin-inline-start: 0px;
+    }
+    .imgg{
+        margin-top: 100px;
+    }
+    .buynow{
+        height: 60px;
+        width: 280px;
+
+    }
+    .abuy{
+        margin-inline-start: 0px;
+    }
+    .iphone{
+        height: 100%;
+        display: block;
+        text-align: center;
+    }
+    .iphoneimg{
+        height: 600px;
+        padding-top: 50px;
+        margin-inline-start: 0px;
+    }
+    .iph{
+        width: 100%;
+        text-align: center;
+    }
+    .iph1{
+        margin-top: 100px;
+        font-size: 40px;
+        margin-inline-start: 0%;
+    }
+    .iph2{
+        text-align: center;
+        margin-inline-end: 0%;
+        font-size: 30px;
+        margin-bottom: 100px;
+    }
+    .table{
+        display: none;
+    }
+    .tablephone{
+        display: block;
+        text-align: center;
+    }
+    .bonusimg{
+        height: 150px;
+    }
+    .bonusimg1{
+        height: 250px;
+    }
+    .bonus h1{
+        padding-top: 50px;
+        text-align: center;
+        font-size: 100px;
+    }
+    .bonustxt{
+        font-size: 50px;
+    }
+      /*----------------------Всплываюцие окно-------------------------------*/
+.overlaygl{
+    display: block;
+}
+.zam{
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: rgb(126, 125, 125);
+  }
+  .buttonn {
+    margin-top: 50px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color: rgb(176, 189, 255);
+    width: 400px;
+    font-size: 60px;
+  }
+  .buttonn1{
+    margin-top: 50px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color: rgb(52, 51, 51);
+    width: 400px;
+    font-size: 60px;
+  }
+  
+  .overlay {
+    z-index: 2000;
+    position: fixed;
+    overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+    display: none;
+  }
+  
+  .popup {
+    border-radius: 20px;
+    z-index: 2000;
+      position: absolute;
+      width: 500px;
+      left: 50%;
+      top: 20%;
+      transform: translate(-50%, -50%);
+      padding: 40px;
+      box-sizing: border-box;
+      color: #fff;
+  }
+  
+  .close-popup {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      width: 23px;
+      height: 23px;
+      cursor: pointer;
+  }
+  
+  .close-popup:before {
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      height: 1px;
+      width: 31px;
+      top: 11px;
+      left: -4px;
+      transform: rotate(-45deg);
+  }
+  
+  .close-popup:after {
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      height: 1px;
+      width: 31px;
+      top: 11px;
+      transform: rotate(45deg);
+      left: -4px;
+  }
+
+}

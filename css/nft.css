@@ -1,0 +1,580 @@
+@font-face {font-family: "e-Ukraine"; src: url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.eot"); src: url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.woff") format("woff"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.svg#e-Ukraine") format("svg"); }
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    font-family: 'e-Ukraine', sans-serif;
+    z-index: -200;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+button{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+::-webkit-scrollbar {
+    background-color:rgba(0, 0, 0, 0);
+    width:16px
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+    background-color:rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-track:hover {
+    background-color:rgba(0, 0, 0, 0)
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 169, 169, 0.548);
+    border-radius:16px;
+    border:6px solid #000;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color:#fff;
+    border:6px solid #000;
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {display:none}
+
+/* Header style start */
+.header {
+    display: flex;
+    width: 100%;
+    background: black;
+    padding: 0;
+    z-index: 10;
+    height: 69px;
+    box-shadow: 0px 0px 50px -24px #fff;
+    background-color: black;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+}
+.header-pc{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 50px -24px #fff;
+    margin-inline-start: 19.3%;
+    z-index: 10;
+    background-color: black;
+}
+.header-phone{
+    display: none;
+}
+
+.header-logo{
+    margin-inline-start: 19.6%;
+    z-index: 10;
+
+}
+
+.header-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 200;
+}
+
+.header-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+}
+
+.header-trigger{
+    display: none;
+}
+
+.header-button{
+    background-color: black;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+    border: none;
+}
+
+.header-close-button {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 100%;
+    height: auto;
+    position: relative;
+    color: #fff;
+    background: none;
+    border: none;
+    margin: 24px;
+}
+
+.header-modal-links{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    padding-top: 45%;
+    gap: 2%;
+}
+
+.header-menu-icon{
+    width: 25px;
+    height:auto" 
+}
+
+.header-close{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+@media only screen  and (max-width: 1000px) {
+    .header-logo {
+        margin-inline-start: 0;
+        z-index: 10;
+    }
+
+    .header-trigger{
+        display: block;
+        color: #fff;
+        width: auto;
+        background: none;
+        border: none;
+        margin-inline-end: 20px;
+    }
+
+    .header-pc{
+        display: none;
+    }
+    
+    .header{
+        justify-content: space-between;
+    }
+}
+/* Header style finish */
+.img{
+    height: 65px;
+}
+.button{
+    background-color: black;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+    border: none;
+}
+
+
+
+.patreon{
+    background: url('../img/opensea.jpg') no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: 25% 50%;;
+    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: -10;
+    margin-top: -69px;
+}
+.patreon h1{
+    padding-left: 20%;
+    font-size: 50px;
+    margin-top: 0px;
+    font-family: 'e-Ukraine-Light', sans-serif;
+}
+.patreon h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 300px;
+    font-family: 'e-Ukraine-Thin', sans-serif;
+}
+.nft h1{
+    text-align: center;
+}
+.nft{
+    height: 100vh;
+    display: block;
+}
+.nftphone{
+    display: none;
+}
+.buy{
+    display: flex;
+    background-color: black;
+    padding-top: 50px;
+}
+.nftimg{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    counter-set: fit;
+}
+
+.img1{
+    margin-inline-start: 300px;
+}
+.buynow{
+    background-color: #0072bc;
+    height: 20%;
+    width: 100%;
+    border-radius: 0 0 20px 20px ;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.abuy{
+    margin-inline-start: 146px;
+}
+.abuy1{
+    margin-inline-start: 300px;
+}
+.iphone{
+    height: 100vh;
+    display: flex;
+}
+.iph{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.iphoneimg{
+    height: 70%;
+}
+.iph1{
+    font-size: 40px;
+}
+.iph2{
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+.bonus{ 
+    height: 60vh;
+    font-family: 'e-Ukraine-Light', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    gap: 5%;
+}
+.bonus h1{
+    text-align: center;
+    font-size: 50px;
+}
+.bonusimg{
+    height: 150px;
+}
+
+.table{
+    font-size: 30px;
+    text-align: center;
+    display: contents;
+}
+.tablephone{
+    display: none;
+}
+.bonusline{
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
+}
+.overlaygl{
+    display: none;
+}
+
+.imgmmm{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.image {
+	position: relative;
+	width: 250px;
+    margin: 50px;
+}
+.imagem{
+    width: 250px;
+    border-radius: 100%;
+    height: 200px;
+    box-shadow: rgb(5, 5, 5) 0px 54px 55px, rgb(5, 5, 5) 0px -12px 30px, rgb(5, 5, 5) 0px 4px 6px, rgb(255, 255, 255) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 5px;
+    block-size: fit-content;
+    opacity: 0.8;
+
+}
+.imgtxt{
+	position: absolute;
+	width: 100%;
+    color: white;
+    margin: 0;           
+    top: 50%;                        
+    transform: translate(0, -50%);
+    text-align: center;
+    font-size: 30px; 
+}
+.fontimg{
+    font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    background-color:rgba(0, 0, 0, 0);
+    width:16px
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+    background-color:rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-track:hover {
+    background-color:rgba(0, 0, 0, 0)
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 169, 169, 0.548);
+    border-radius:16px;
+    border:6px solid #000;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color:#fff;
+    border:6px solid #000;
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {display:none}
+
+
+.becomeowner{
+    color: #fff;
+    font-size: 70px;
+    font-family: 'e-Ukraine', sans-serif;
+    letter-spacing: 10px;
+    text-align: start;
+    margin-top: 10%;
+}
+
+.patreondiv{
+    padding-left: 20%;
+    padding-top: 9%;
+
+}
+
+.patreondiv2{
+    width: 100%;
+    text-align:center;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 10%;
+    font-size: 46px;
+}
+
+.see{
+    margin-top: 3%;
+}
+
+
+.trigger{
+    display: none;
+}
+
+
+    .modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+        z-index: 200;
+    }
+    
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        padding: 1rem 1.5rem;
+        width: 100%;
+        height: 100%;
+        color: white;
+    font-size: 24px;
+    }
+    
+    .close-button {
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        font-size: 100%;
+        height: auto;
+        position: relative;
+        color: #fff;
+        background: none;
+        border: none;
+        margin: 24px;
+    }
+    
+    .popcontent{
+        display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    padding-top: 45%;
+    }
+
+    .close-button:hover {
+        background-color: darkgray;
+    }
+    
+    .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+    .stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .vertical-line{
+        border:  1px solid white;
+        height: 80%;
+    }
+
+    .bonuspart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15.5%;
+        gap:5%;
+        height: 100%;
+        justify-content: center;
+    }
+@media only screen  and (max-width: 1000px) {
+    #header{
+        display: none;
+    }
+    
+    .header{
+        justify-content: space-between;
+    }
+
+    .trigger{
+        display: block;
+        color: #fff;
+        width: auto;
+        background: none;
+        border: none;
+        margin-inline-end: 20px;
+    }
+    .headerlogo {
+        margin-inline-start: 0;
+        z-index: 10;
+    }
+
+    .becomeowner{
+        text-align: center;
+        margin-top: 0;
+    }
+    .patreondiv{
+        padding-left: 0%;
+        padding-top: 0%;
+        text-align: center;
+        padding-top: 50%;
+    }
+
+    .patreondiv2{
+        font-size: 30px;
+    }
+
+    .imgmmm {
+        height: 100%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #remove{
+        display: none;
+    }
+
+    .iphone {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iph{
+        width: 100%;
+        height: 50%;
+    }
+    .iph2{
+        width: 78%;
+    }
+
+    .bonus{
+        height: 100vh;
+        flex-direction: column;
+        font-size: 24px;
+        justify-content: space-evenly;
+        gap: 0%;
+    }
+    .bonuspart{
+        width: 48%;
+    }
+
+    .iphoneimg{
+        height: 90%;
+    }
+}

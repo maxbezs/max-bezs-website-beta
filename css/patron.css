@@ -1,0 +1,429 @@
+@font-face {font-family: "e-Ukraine"; src: url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.eot"); src: url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.woff") format("woff"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.svg#e-Ukraine") format("svg"); }
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    background-color: black;
+    font-family: 'e-Ukraine', sans-serif;
+    z-index: -200;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Header style start */
+.header {
+    display: flex;
+    width: 100%;
+    background: black;
+    padding: 0;
+    z-index: 10;
+    height: 69px;
+    box-shadow: 0px 0px 50px -24px #fff;
+    background-color: black;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+}
+.header-pc{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 50px -24px #fff;
+    margin-inline-start: 19.3%;
+    z-index: 10;
+    background-color: black;
+}
+.header-phone{
+    display: none;
+}
+
+.header-logo{
+    margin-inline-start: 19.6%;
+    z-index: 10;
+
+}
+
+.header-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 200;
+}
+
+.header-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+}
+
+.header-trigger{
+    display: none;
+}
+
+.header-button{
+    background-color: black;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+    border: none;
+}
+
+.header-close-button {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 100%;
+    height: auto;
+    position: relative;
+    color: #fff;
+    background: none;
+    border: none;
+    margin: 24px;
+}
+
+.header-modal-links{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    padding-top: 45%;
+    gap: 2%;
+}
+
+.header-menu-icon{
+    width: 25px;
+    height:auto" 
+}
+
+.header-close{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+@media only screen  and (max-width: 1000px) {
+    .header-logo {
+        margin-inline-start: 0;
+        z-index: 10;
+    }
+
+    .header-trigger{
+        display: block;
+        color: #fff;
+        width: auto;
+        background: none;
+        border: none;
+        margin-inline-end: 20px;
+    }
+
+    .header-pc{
+        display: none;
+    }
+    
+    .header{
+        justify-content: space-between;
+    }
+}
+/* Header style finish */
+.img{
+    height: 65px;
+}
+.button{
+    background-color: black;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+}
+
+.patreon{
+    background: url('../img/patreon.png') no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: 25% 50%;;
+    background-size: cover;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: -10;
+    margin-top: -69px;
+}
+
+.patreon h1{
+    padding-left: 20%;
+    font-size: 60px;
+    margin-top: 0px;
+    font-family: 'e-Ukraine-Light', sans-serif;
+}
+.patreon h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 300px;
+}
+.br{
+    display: none;
+}
+.acces{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.accesimg{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.accesh{
+    text-align: center;
+    font-size: 50px;
+    width: 50%;
+}
+.insights{
+    background: url('../img/back.jpg') no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+.insightsphone{
+    display: none;
+}
+.insightsh{
+    text-align: end;
+    margin-inline-end: 11%;
+    margin-inline-start: 60%;
+    font-size: 50px;
+}
+.bonus{ 
+    height: 80vh;
+    font-family: 'e-Ukraine-Light', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    gap: 5%;
+}
+.bonus h1{
+    text-align: center;
+    font-size: 50px;
+}
+.bonusimg{
+    height: 150px;
+}
+.table{ 
+    font-size: 30px;
+    text-align: center;
+    width: 60%;
+}
+.tablephone{
+    display: none;
+}
+.bonusline{
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
+}
+.overlaygl{
+    display: none;
+}
+
+.patreondiv{
+    padding-left: 20%;
+    padding-top: 9%;
+
+}
+
+.patreondiv2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 10%;
+    font-size: 46px;
+}
+
+
+.becomeowner{
+    color: #fff;
+    font-size: 70px;
+    font-family: 'e-Ukraine', sans-serif;
+    letter-spacing: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20vh;
+}
+
+.becomeowner1{
+    color: #fff;
+    font-size: 70px;
+    font-family: 'e-Ukraine', sans-serif;
+    letter-spacing: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.td{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+::-webkit-scrollbar {
+    background-color:rgba(0, 0, 0, 0);
+    width:16px
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+    background-color:rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-track:hover {
+    background-color:rgba(0, 0, 0, 0)
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 169, 169, 0.548);
+    border-radius:16px;
+    border:6px solid #000;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color:#fff;
+    border:6px solid #000;
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {display:none}
+
+.accesdiv{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.bonuspart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15.5%;
+}
+
+.vertical-line{
+    border:  1px solid white;
+    height: 80%;
+}
+
+@media only screen  and (max-width: 1000px) {
+    .patreondiv{
+        padding-left: 0%;
+        padding-top: 0%;
+        text-align: center;
+        padding-top: 50%;
+    }
+
+    .patreondiv2{
+        font-size: 30px;
+    }
+
+    .acces{
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    .accesimg{
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+    }
+
+    .accesdiv{
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        position: absolute;
+    width: 100%;
+    color: white;
+    margin: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+    }
+
+    .accesh{
+        width: 80%;
+        font-size: 36px;
+    }
+
+    .insights{
+        height: 50vh;
+        justify-content: center
+    }
+    #remove{
+        display: none;
+    }
+
+    .bonus{
+        height: 90vh;
+        flex-direction: column;
+        font-size: 24px;
+        justify-content: space-evenly;
+        gap: 0%;
+    }
+
+    .bonuspart{
+        width: 48%;
+    }
+    .becomeowner{
+        font-size: 50px;
+        height: 10vh;
+    }
+}

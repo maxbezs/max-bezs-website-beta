@@ -1,0 +1,365 @@
+@font-face {font-family: "e-Ukraine"; src: url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.eot"); src: url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.woff") format("woff"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a44207bfe4040f536c824dbbf82f5ed1.svg#e-Ukraine") format("svg"); }
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    background-color: #000;
+    font-family: 'e-Ukraine', sans-serif;
+    z-index: -200;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Header style start */
+.header {
+  display: flex;
+  width: 100%;
+  background: black;
+  padding: 0;
+  z-index: 10;
+  height: 69px;
+  box-shadow: 0px 0px 50px -24px #fff;
+  background-color: black;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: black;
+}
+.header-pc{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 50px -24px #fff;
+  margin-inline-start: 19.3%;
+  z-index: 10;
+  background-color: black;
+}
+.header-phone{
+  display: none;
+}
+
+.header-logo{
+  margin-inline-start: 19.6%;
+  z-index: 10;
+
+}
+
+.header-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 200;
+}
+
+.header-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 24px;
+}
+
+.header-trigger{
+  display: none;
+}
+
+.header-button{
+  background-color: black;
+  height: 100%;
+  color: white;
+  font-size: 24px;
+  border: none;
+}
+
+.header-close-button {
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 100%;
+  height: auto;
+  position: relative;
+  color: #fff;
+  background: none;
+  border: none;
+  margin: 24px;
+}
+
+.header-modal-links{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding-top: 45%;
+  gap: 2%;
+}
+
+.header-menu-icon{
+  width: 25px;
+  height:auto" 
+}
+
+.header-close{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+@media only screen  and (max-width: 1000px) {
+  .header-logo {
+      margin-inline-start: 0;
+      z-index: 10;
+  }
+
+  .header-trigger{
+      display: block;
+      color: #fff;
+      width: auto;
+      background: none;
+      border: none;
+      margin-inline-end: 20px;
+  }
+
+  .header-pc{
+      display: none;
+  }
+  
+  .header{
+      justify-content: space-between;
+  }
+}
+/* Header style finish */
+
+.img{
+    height: 65px;
+}
+.button{
+    background-color: black;
+    height: 100%;
+    color: white;
+    font-size: 24px;
+}
+.accesdiv{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.acces{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.accesimg{
+  width: 45%;
+  height: 45%;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px 5px rgb(255 255 255 / 26%);
+}
+
+.create h1{
+    padding-top: 50px;
+    color: white;
+}
+.max{
+    height: 400px;
+}
+.website{
+    color: white;
+    text-align: center;
+}
+.info{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2%;
+    height: 100%;
+}
+.infophone{
+  display: none;
+}
+.soft{
+    color: white;
+    text-align: center;
+    display: block;
+}
+.softphone{
+  display: none;
+}
+.hr{
+    border:1px solid white;
+    margin-inline-start: 0;
+    background-color: white;
+    width: 45%;
+    margin-inline-start: 27%;
+  }
+  .tabphoto{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center
+  }
+  
+  a{
+    color: white;
+    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  font-weight: bold;
+
+  }
+  
+::-webkit-scrollbar {
+  background-color:rgba(0, 0, 0, 0);
+  width:16px
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+  background-color:rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-track:hover {
+  background-color:rgba(0, 0, 0, 0)
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(169, 169, 169, 0.548);
+  border-radius:16px;
+  border:6px solid #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color:#fff;
+  border:6px solid #000;
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {display:none}
+
+table{
+  width: 45%;
+}
+
+.unit{
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  align-items: center;
+}
+
+.unit-div{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 80%;
+}
+
+.vertical-line{
+  border:  1px solid white;
+  height: 80%;
+}
+
+.more{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.more-links{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 15vh;
+  gap: 5%;
+}
+
+@media only screen  and (max-width: 1000px) {
+  .acces{
+    flex-direction: column;
+    height: 100vh;
+    margin-top: -69px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .accesimg{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .accesdiv{
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    color: white;
+    margin: 0;
+    bottom: 0%;
+    transform: translate(0, -50%);
+    text-align: start;
+  }
+
+  .accesh{
+      width: 80%;
+      font-size: 36px;
+  }
+
+  .unit{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .unit-div{
+    text-align: center;
+  }
+
+  .tabphoto{
+    width: 100%;
+    height: auto;
+  }
+}
