@@ -2,6 +2,16 @@ const modal = document.querySelector(".header-modal");
 const trigger = document.querySelector(".header-trigger");
 const closeButton = document.querySelector(".header-close");
 
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker
+      .register("/serviceWorker.js")
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err))
+  })
+}
+
 function toggleModal() {
     modal.classList.toggle("show-modal");
 }
