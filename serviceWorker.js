@@ -1,8 +1,7 @@
 const staticDevCoffee = "max-bezs"
 const assets = [
-  "/",
   "/index.html",
-  "/css/style.css",
+  "/css/index.css",
   "/js/scripts.js",
 ]
 
