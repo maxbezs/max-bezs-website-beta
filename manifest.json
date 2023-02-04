@@ -8,9 +8,9 @@
   "icons": [
     {
         "src": "https://raw.githubusercontent.com/maxbezs/max_bezs-website-images/main/icon192.webp",
-        "sizes": "192x192",
+        "sizes": "144x144",
         "type": "image/webp",
-        "purpose": "maskable"
+        "purpose": "any"
     },
     {
         "src": "https://raw.githubusercontent.com/maxbezs/max_bezs-website-images/main/icon256.webp",
