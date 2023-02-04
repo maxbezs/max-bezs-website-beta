@@ -3,6 +3,9 @@ const assets = [
   "/index.html",
   "/css/index.css",
   "/js/scripts.js",
+  "https://raw.githubusercontent.com/maxbezs/max_bezs-website-images/main/prof.webp",
+  "https://raw.githubusercontent.com/maxbezs/max_bezs-website-images/main/4.webp",
+  "https://raw.githubusercontent.com/maxbezs/max_bezs-website-images/main/3.webp",  
 ]
 
 self.addEventListener("install", installEvent => {
