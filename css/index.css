@@ -77,6 +77,8 @@ button{
     margin-inline-start: 19.3%;
     z-index: 10;
     background-color: black;
+    gap: 20%;
+    
 }
 .header-phone{
     display: none;
@@ -241,7 +243,7 @@ h1 {
 
 #fullScreenDiv{
     min-height: 100%; 
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     padding:0;
     margin: 0;
@@ -279,7 +281,7 @@ h1 {
 
 @media (max-aspect-ratio: 16/9) {
   #video {
-    height: 100vh; 
+    height: 100dvh; 
     width:auto;
     margin-inline-start: 50vw;
     transform: translate(-50%);
@@ -377,7 +379,7 @@ h1 {
 
 .prof{
     background: url('https://raw.githubusercontent.com/maxbezs/max_bezs-website-images/main/prof.webp') no-repeat;
-    height: 100vh;
+    height: 100dvh;
     color: white;
 	text-shadow: 2px 2px 2px black, 0 0 0em black;
 	background-attachment: fixed;
@@ -420,7 +422,7 @@ td{
 .PORTFOLIO{
     background: url('https://raw.githubusercontent.com/maxbezs/max_bezs-website-images/main/portfolio-background.webp') no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-position: center;
     background-size: cover;
     display: block;
@@ -888,3 +890,4 @@ p{
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
 }
+
